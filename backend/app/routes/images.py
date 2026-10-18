@@ -3,7 +3,7 @@ from starlette.datastructures import State
 from app.routes.dependencies import get_state, request_metadata_export
 from typing import List, Optional
 from app.database.images import db_get_all_images
-from app.schemas.images import ErrorResponse
+from app.schemas.images import ErrorResponse, ErrorResponseEnvelope
 from app.utils.images import image_util_parse_metadata, image_util_delete_images
 from pydantic import BaseModel
 from app.database.images import (
@@ -68,7 +68,7 @@ class SemanticSearchResponse(BaseModel):
 @router.get(
     "/",
     response_model=GetAllImagesResponse,
-    responses={500: {"model": ErrorResponse}},
+    responses={500: {"model": ErrorResponseEnvelope}},
 )
 def get_all_images(
     tagged: Optional[bool] = Query(None, description="Filter images by tagged status")
@@ -114,7 +114,7 @@ def get_all_images(
 @router.get(
     "/search",
     response_model=GetAllImagesResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 404, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 404, 500]},
 )
 def search_images_by_tag(tag: str = Query(..., description="Tag name to search for")):
     """Search images by tag name."""
@@ -157,7 +157,7 @@ def search_images_by_tag(tag: str = Query(..., description="Tag name to search f
 @router.get(
     "/semantic-search",
     response_model=SemanticSearchResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 404, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 404, 500]},
 )
 def semantic_search_images(
     query: str = Query(..., min_length=1, description="Query text to search for")
@@ -385,7 +385,7 @@ class DeleteImagesResponse(BaseModel):
 @router.delete(
     "/delete-images",
     response_model=DeleteImagesResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 500]},
 )
 def delete_images(request: DeleteImagesRequest):
     """Delete images from the gallery, optionally from the device as well."""

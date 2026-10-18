@@ -30,7 +30,7 @@ Each route declares its error contract:
 @router.get(
     "/",
     response_model=GetAllVideosResponse,
-    responses={500: {"model": ErrorResponse}},
+    responses={500: {"model": ErrorResponseEnvelope}},
 )
 def get_all_videos():
     """Get all videos from the database."""

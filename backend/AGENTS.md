@@ -20,8 +20,9 @@ them before writing a new resource.
 
 - `logger = get_logger(__name__)` from `app.logging.setup_logging`, right after the imports.
 - Declare response models as Pydantic classes in the route file itself.
-- Every route declares `responses={500: {"model": ErrorResponse}}` and imports
-  `ErrorResponse` from `app/schemas/<resource>.py`.
+- Every route declares `responses={500: {"model": ErrorResponseEnvelope}}` and imports
+  `ErrorResponseEnvelope` from `app/schemas/<resource>.py`. A raised HTTPException reaches
+  the client wrapped in `detail`, so the bare `ErrorResponse` documents a body nobody gets.
 - Return `{success, message, data}` shaped responses.
 - **Build list responses row by row.** One record with unusable metadata must not 500 the
   whole listing and hide every other row — see `get_all_videos` for the pattern.

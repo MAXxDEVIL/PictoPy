@@ -26,6 +26,7 @@ from app.schemas.face_clusters import (
     RenameClusterResponse,
     RenameClusterData,
     ErrorResponse,
+    ErrorResponseEnvelope,
     GetClustersResponse,
     GetClustersData,
     GlobalReclusterResponse,
@@ -82,7 +83,7 @@ def _rescore_memories_for_cluster(app_state: State, cluster_id: str) -> None:
 @router.put(
     "/{cluster_id}",
     response_model=RenameClusterResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 404, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 404, 500]},
 )
 def rename_cluster(
     cluster_id: str,
@@ -168,7 +169,7 @@ def rename_cluster(
 @router.get(
     "/",
     response_model=GetClustersResponse,
-    responses={code: {"model": ErrorResponse} for code in [500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [500]},
 )
 def get_all_clusters():
     """Get metadata for all face clusters including face counts."""
@@ -206,7 +207,7 @@ def get_all_clusters():
 @router.get(
     "/{cluster_id}/images",
     response_model=GetClusterImagesResponse,
-    responses={code: {"model": ErrorResponse} for code in [404, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [404, 500]},
 )
 def get_cluster_images(cluster_id: str):
     """Get all images that contain faces belonging to a specific cluster."""
@@ -278,7 +279,7 @@ def get_cluster_images(cluster_id: str):
 
 @router.post(
     "/face-search",
-    responses={code: {"model": ErrorResponse} for code in [400, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 500]},
 )
 def face_tagging(
     payload: FaceSearchRequest,
@@ -373,7 +374,7 @@ def face_tagging(
 @router.post(
     "/global-recluster",
     response_model=GlobalReclusterResponse,
-    responses={code: {"model": ErrorResponse} for code in [500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [500]},
 )
 def trigger_global_reclustering(app_state: State = Depends(get_state)):
     """
@@ -422,7 +423,7 @@ def trigger_global_reclustering(app_state: State = Depends(get_state)):
 @router.post(
     "/multi-search",
     response_model=MultiPersonSearchResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 404, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 404, 500]},
 )
 def search_images_by_multiple_faces(body: MultiPersonSearchRequest):
     """Search for images containing multiple face identities, ranked by match count."""

@@ -58,8 +58,8 @@ This is the highest-value check — search before accepting anything new.
   which reflows to 300 columns and is the single most damaging mistake in this repo.
 - Database functions prefixed `db_`; connections through `_connect()`, never
   `sqlite3.connect` directly.
-- Routes declare `responses={500: {"model": ErrorResponse}}` and have a
-  `logger = get_logger(__name__)`.
+- Routes declare `responses={500: {"model": ErrorResponseEnvelope}}` — the `detail` wrapper
+  FastAPI returns — and have a `logger = get_logger(__name__)`.
 - List endpoints build results row by row, so one bad record cannot 500 the whole response.
 - **A new `db_create_*_table()` must be called in both `backend/main.py` and
   `backend/tests/conftest.py`, in the same order.** Check both; one without the other is

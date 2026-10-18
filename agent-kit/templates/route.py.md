@@ -34,7 +34,7 @@ class GetAll<Resource>Response(BaseModel):
 @router.get(
     "/",
     response_model=GetAll<Resource>Response,
-    responses={500: {"model": ErrorResponse}},
+    responses={500: {"model": ErrorResponseEnvelope}},
 )
 def get_all_<resource>():
     """Get all <resource> from the database."""
@@ -73,8 +73,8 @@ def get_all_<resource>():
 
 - The logger line and `router = APIRouter()` go together, right after imports.
 - Response models live in this file. Only genuinely shared models move to `schemas/`.
-- `responses={500: {"model": ErrorResponse}}` goes on every route so the OpenAPI schema
-  documents the error contract.
+- `responses={500: {"model": ErrorResponseEnvelope}}` goes on every route so the OpenAPI
+  schema documents the error contract, `detail` wrapper and all.
 - Do not leak the exception text into the HTTP response — log it, return a generic message.
 - Register the router in `backend/main.py` and mirror the paths in
   `frontend/src/api/apiEndpoints.ts`.

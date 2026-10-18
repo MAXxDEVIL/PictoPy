@@ -28,6 +28,17 @@ class ErrorResponse(BaseModel):
     error: Optional[str] = None
 
 
+class ErrorResponseEnvelope(BaseModel):
+    """
+    How an ErrorResponse actually reaches the client.
+
+    HTTPException nests whatever it is given under `detail`, so documenting
+    ErrorResponse alone would describe a shape no client ever receives.
+    """
+
+    detail: ErrorResponse
+
+
 class ClusterMetadata(BaseModel):
     cluster_id: str
     cluster_name: Optional[str]

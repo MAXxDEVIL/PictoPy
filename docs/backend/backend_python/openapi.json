@@ -68,7 +68,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -78,7 +78,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -88,7 +88,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -98,7 +98,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -150,7 +150,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -160,7 +160,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -212,7 +212,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -222,7 +222,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -274,7 +274,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -284,7 +284,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -336,7 +336,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -346,7 +346,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -356,7 +356,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -398,7 +398,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__folders__ErrorResponseEnvelope"
                 }
               }
             }
@@ -501,7 +501,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ErrorResponseEnvelope"
+                  "$ref": "#/components/schemas/app__schemas__album__ErrorResponseEnvelope"
                 }
               }
             }
@@ -511,7 +511,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ErrorResponseEnvelope"
+                  "$ref": "#/components/schemas/app__schemas__album__ErrorResponseEnvelope"
                 }
               }
             }
@@ -521,7 +521,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ErrorResponseEnvelope"
+                  "$ref": "#/components/schemas/app__schemas__album__ErrorResponseEnvelope"
                 }
               }
             }
@@ -531,7 +531,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ErrorResponseEnvelope"
+                  "$ref": "#/components/schemas/app__schemas__album__ErrorResponseEnvelope"
                 }
               }
             }
@@ -929,7 +929,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponseEnvelope"
                 }
               }
             },
@@ -984,7 +984,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponseEnvelope"
                 }
               }
             },
@@ -994,7 +994,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1004,7 +1004,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1060,7 +1060,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1070,7 +1070,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1080,7 +1080,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1139,6 +1139,68 @@
         }
       }
     },
+    "/images/delete-images": {
+      "delete": {
+        "tags": [
+          "Images"
+        ],
+        "summary": "Delete Images",
+        "description": "Delete images from the gallery, optionally from the device as well.",
+        "operationId": "delete_images_images_delete_images_delete",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteImagesRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeleteImagesResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponseEnvelope"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/app__schemas__images__ErrorResponseEnvelope"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/videos/": {
       "get": {
         "tags": [
@@ -1163,7 +1225,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1207,7 +1269,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1217,7 +1279,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1273,7 +1335,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1283,7 +1345,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1293,7 +1355,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1336,7 +1398,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1346,7 +1408,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1378,7 +1440,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1410,7 +1472,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1452,7 +1514,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1462,7 +1524,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__videos__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1524,7 +1586,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1534,7 +1596,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1544,7 +1606,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1587,7 +1649,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1629,7 +1691,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1639,7 +1701,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1671,14 +1733,9 @@
             "in": "query",
             "required": false,
             "schema": {
-              "allOf": [
-                {
-                  "$ref": "#/components/schemas/InputType"
-                }
-              ],
+              "$ref": "#/components/schemas/InputType",
               "description": "Choose input type: 'path' or 'base64'",
-              "default": "path",
-              "title": "Input Type"
+              "default": "path"
             },
             "description": "Choose input type: 'path' or 'base64'"
           }
@@ -1706,7 +1763,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1716,7 +1773,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             },
@@ -1759,7 +1816,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1801,7 +1858,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1811,7 +1868,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1821,7 +1878,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1863,7 +1920,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__user_preferences__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__user_preferences__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1903,7 +1960,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__user_preferences__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__user_preferences__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1913,7 +1970,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__user_preferences__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__user_preferences__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1965,7 +2022,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             }
@@ -1975,7 +2032,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             }
@@ -2017,7 +2074,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             }
@@ -2049,7 +2106,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             }
@@ -2151,7 +2208,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             },
@@ -2204,7 +2261,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             },
@@ -2214,7 +2271,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             },
@@ -2275,7 +2332,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             },
@@ -2285,7 +2342,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             },
@@ -2295,7 +2352,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             },
@@ -2346,7 +2403,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             },
@@ -2356,7 +2413,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__memories__ErrorResponseEnvelope"
                 }
               }
             },
@@ -2850,7 +2907,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__metadata_export__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__metadata_export__ErrorResponseEnvelope"
                 }
               }
             }
@@ -2882,7 +2939,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/app__schemas__metadata_export__ErrorResponse"
+                  "$ref": "#/components/schemas/app__schemas__metadata_export__ErrorResponseEnvelope"
                 }
               }
             }
@@ -3359,6 +3416,73 @@
         ],
         "title": "DeleteFoldersResponse"
       },
+      "DeleteImagesData": {
+        "properties": {
+          "deleted_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Deleted Ids"
+          },
+          "failed_paths": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Failed Paths"
+          }
+        },
+        "type": "object",
+        "required": [
+          "deleted_ids",
+          "failed_paths"
+        ],
+        "title": "DeleteImagesData"
+      },
+      "DeleteImagesRequest": {
+        "properties": {
+          "image_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Image Ids"
+          },
+          "delete_from_device": {
+            "type": "boolean",
+            "title": "Delete From Device",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "image_ids"
+        ],
+        "title": "DeleteImagesRequest"
+      },
+      "DeleteImagesResponse": {
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "title": "Success"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "data": {
+            "$ref": "#/components/schemas/DeleteImagesData"
+          }
+        },
+        "type": "object",
+        "required": [
+          "success",
+          "message",
+          "data"
+        ],
+        "title": "DeleteImagesResponse"
+      },
       "DeleteMemoryData": {
         "properties": {
           "memory_id": {
@@ -3394,19 +3518,6 @@
           "data"
         ],
         "title": "DeleteMemoryResponse"
-      },
-      "ErrorResponseEnvelope": {
-        "properties": {
-          "detail": {
-            "$ref": "#/components/schemas/app__schemas__album__ErrorResponse"
-          }
-        },
-        "type": "object",
-        "required": [
-          "detail"
-        ],
-        "title": "ErrorResponseEnvelope",
-        "description": "How an ErrorResponse actually reaches the client.\n\nHTTPException nests whatever it is given under `detail`, so documenting\nErrorResponse alone would describe a shape no client ever receives."
       },
       "ExportRunSummary": {
         "properties": {
@@ -4400,6 +4511,7 @@
           "metadata": {
             "anyOf": [
               {
+                "additionalProperties": true,
                 "type": "object"
               },
               {
@@ -5331,6 +5443,7 @@
           "signals": {
             "anyOf": [
               {
+                "additionalProperties": true,
                 "type": "object"
               },
               {
@@ -5641,6 +5754,7 @@
           "metadata": {
             "anyOf": [
               {
+                "additionalProperties": true,
                 "type": "object"
               },
               {
@@ -6757,6 +6871,13 @@
           "type": {
             "type": "string",
             "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
           }
         },
         "type": "object",
@@ -7044,6 +7165,19 @@
         ],
         "title": "ErrorResponse"
       },
+      "app__schemas__album__ErrorResponseEnvelope": {
+        "properties": {
+          "detail": {
+            "$ref": "#/components/schemas/app__schemas__album__ErrorResponse"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorResponseEnvelope",
+        "description": "How an ErrorResponse actually reaches the client.\n\nHTTPException nests whatever it is given under `detail`, so documenting\nErrorResponse alone would describe a shape no client ever receives."
+      },
       "app__schemas__face_clusters__ErrorResponse": {
         "properties": {
           "success": {
@@ -7076,6 +7210,19 @@
         },
         "type": "object",
         "title": "ErrorResponse"
+      },
+      "app__schemas__face_clusters__ErrorResponseEnvelope": {
+        "properties": {
+          "detail": {
+            "$ref": "#/components/schemas/app__schemas__face_clusters__ErrorResponse"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorResponseEnvelope",
+        "description": "How an ErrorResponse actually reaches the client.\n\nHTTPException nests whatever it is given under `detail`, so documenting\nErrorResponse alone would describe a shape no client ever receives."
       },
       "app__schemas__folders__ErrorResponse": {
         "properties": {
@@ -7110,6 +7257,19 @@
         "type": "object",
         "title": "ErrorResponse"
       },
+      "app__schemas__folders__ErrorResponseEnvelope": {
+        "properties": {
+          "detail": {
+            "$ref": "#/components/schemas/app__schemas__folders__ErrorResponse"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorResponseEnvelope",
+        "description": "How an ErrorResponse actually reaches the client.\n\nHTTPException nests whatever it is given under `detail`, so documenting\nErrorResponse alone would describe a shape no client ever receives."
+      },
       "app__schemas__images__ErrorResponse": {
         "properties": {
           "success": {
@@ -7132,6 +7292,19 @@
           "error"
         ],
         "title": "ErrorResponse"
+      },
+      "app__schemas__images__ErrorResponseEnvelope": {
+        "properties": {
+          "detail": {
+            "$ref": "#/components/schemas/app__schemas__images__ErrorResponse"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorResponseEnvelope",
+        "description": "How an ErrorResponse actually reaches the client.\n\nHTTPException nests whatever it is given under `detail`, so documenting\nErrorResponse alone would describe a shape no client ever receives."
       },
       "app__schemas__memories__ErrorResponse": {
         "properties": {
@@ -7157,6 +7330,19 @@
         "title": "ErrorResponse",
         "description": "Error response model"
       },
+      "app__schemas__memories__ErrorResponseEnvelope": {
+        "properties": {
+          "detail": {
+            "$ref": "#/components/schemas/app__schemas__memories__ErrorResponse"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorResponseEnvelope",
+        "description": "How an ErrorResponse actually reaches the client.\n\nHTTPException nests whatever it is given under `detail`, so documenting\nErrorResponse alone would describe a shape no client ever receives."
+      },
       "app__schemas__metadata_export__ErrorResponse": {
         "properties": {
           "success": {
@@ -7179,6 +7365,19 @@
           "error"
         ],
         "title": "ErrorResponse"
+      },
+      "app__schemas__metadata_export__ErrorResponseEnvelope": {
+        "properties": {
+          "detail": {
+            "$ref": "#/components/schemas/app__schemas__metadata_export__ErrorResponse"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorResponseEnvelope",
+        "description": "How an ErrorResponse actually reaches the client.\n\nHTTPException nests whatever it is given under `detail`, so documenting\nErrorResponse alone would describe a shape no client ever receives."
       },
       "app__schemas__share__ErrorResponse": {
         "properties": {
@@ -7227,6 +7426,19 @@
         "title": "ErrorResponse",
         "description": "Error response model"
       },
+      "app__schemas__user_preferences__ErrorResponseEnvelope": {
+        "properties": {
+          "detail": {
+            "$ref": "#/components/schemas/app__schemas__user_preferences__ErrorResponse"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorResponseEnvelope",
+        "description": "How an ErrorResponse actually reaches the client.\n\nHTTPException nests whatever it is given under `detail`, so documenting\nErrorResponse alone would describe a shape no client ever receives."
+      },
       "app__schemas__videos__ErrorResponse": {
         "properties": {
           "success": {
@@ -7249,6 +7461,19 @@
           "error"
         ],
         "title": "ErrorResponse"
+      },
+      "app__schemas__videos__ErrorResponseEnvelope": {
+        "properties": {
+          "detail": {
+            "$ref": "#/components/schemas/app__schemas__videos__ErrorResponse"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorResponseEnvelope",
+        "description": "How an ErrorResponse actually reaches the client.\n\nHTTPException nests whatever it is given under `detail`, so documenting\nErrorResponse alone would describe a shape no client ever receives."
       }
     }
   }

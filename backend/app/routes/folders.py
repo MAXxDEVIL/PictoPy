@@ -30,6 +30,7 @@ from app.schemas.folders import (
     DeleteFoldersRequest,
     DeleteFoldersResponse,
     ErrorResponse,
+    ErrorResponseEnvelope,
     FolderDetails,
     GetAllFoldersData,
     GetAllFoldersResponse,
@@ -255,7 +256,7 @@ def post_sync_folder_sequence(
 @router.post(
     "/add-folder",
     response_model=AddFolderResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 401, 409, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 401, 409, 500]},
 )
 def add_folder(request: AddFolderRequest, app_state: State = Depends(get_state)):
     try:
@@ -357,7 +358,7 @@ def add_folder(request: AddFolderRequest, app_state: State = Depends(get_state))
 @router.post(
     "/enable-ai-tagging",
     response_model=UpdateAITaggingResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 500]},
 )
 def enable_ai_tagging(
     request: UpdateAITaggingRequest, app_state: State = Depends(get_state)
@@ -403,7 +404,7 @@ def enable_ai_tagging(
 @router.post(
     "/disable-ai-tagging",
     response_model=UpdateAITaggingResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 500]},
 )
 def disable_ai_tagging(request: UpdateAITaggingRequest):
     """Disable AI tagging for multiple folders."""
@@ -444,7 +445,7 @@ def disable_ai_tagging(request: UpdateAITaggingRequest):
 @router.delete(
     "/delete-folders",
     response_model=DeleteFoldersResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 500]},
 )
 def delete_folders(
     request: DeleteFoldersRequest, app_state: State = Depends(get_state)
@@ -504,7 +505,7 @@ def delete_folders(
 @router.post(
     "/sync-folder",
     response_model=SyncFolderResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 404, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 404, 500]},
 )
 def sync_folder(request: SyncFolderRequest, app_state: State = Depends(get_state)):
     """Sync a folder by comparing filesystem folders with database entries and removing extra DB entries."""
@@ -582,7 +583,7 @@ def sync_folder(request: SyncFolderRequest, app_state: State = Depends(get_state
 @router.get(
     "/all-folders",
     response_model=GetAllFoldersResponse,
-    responses={code: {"model": ErrorResponse} for code in [500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [500]},
 )
 def get_all_folders():
     """Get details of all folders in the database."""

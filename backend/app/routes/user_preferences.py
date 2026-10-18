@@ -11,6 +11,7 @@ from app.schemas.user_preferences import (
     UpdateUserPreferencesResponse,
     UserPreferencesData,
     ErrorResponse,
+    ErrorResponseEnvelope,
 )
 
 router = APIRouter()
@@ -46,7 +47,7 @@ def _load_preferences(metadata: Optional[Dict[str, Any]]) -> UserPreferencesData
 @router.get(
     "/",
     response_model=GetUserPreferencesResponse,
-    responses={code: {"model": ErrorResponse} for code in [500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [500]},
 )
 def get_user_preferences():
     """Get user preferences from metadata."""
@@ -71,7 +72,7 @@ def get_user_preferences():
 @router.put(
     "/",
     response_model=UpdateUserPreferencesResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 500]},
 )
 def update_user_preferences(
     request: UpdateUserPreferencesRequest, app_state: State = Depends(get_state)

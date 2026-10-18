@@ -14,7 +14,7 @@ from app.database.videos import (
     db_get_video_by_id,
 )
 from app.routes.dependencies import get_state
-from app.schemas.videos import ErrorResponse, VideoData
+from app.schemas.videos import ErrorResponse, ErrorResponseEnvelope, VideoData
 from app.utils.videos import (
     video_util_backfill_video_faces,
     video_util_face_detection_enabled,
@@ -37,7 +37,7 @@ class GetAllVideosResponse(BaseModel):
 @router.get(
     "/",
     response_model=GetAllVideosResponse,
-    responses={500: {"model": ErrorResponse}},
+    responses={500: {"model": ErrorResponseEnvelope}},
 )
 def get_all_videos():
     """Get all videos from the database."""
@@ -64,7 +64,7 @@ def get_all_videos():
 @router.get(
     "/search",
     response_model=GetAllVideosResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 500]},
 )
 def search_videos_by_tag(tag: str = Query(..., description="Tag name to search for")):
     """Search videos by tag name."""
@@ -114,7 +114,7 @@ class SemanticSearchResponse(BaseModel):
 @router.get(
     "/semantic-search",
     response_model=SemanticSearchResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 404, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 404, 500]},
 )
 def semantic_search_videos(
     query: str = Query(..., min_length=1, description="Query text to search for")
@@ -289,7 +289,7 @@ def _face_scan_status(app_state: State) -> FaceScanStatusData:
 @router.post(
     "/scan-faces",
     response_model=FaceScanStatusResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 500]},
 )
 def scan_video_faces(
     app_state: State = Depends(get_state),
@@ -342,7 +342,7 @@ def scan_video_faces(
 @router.get(
     "/face-scan-status",
     response_model=FaceScanStatusResponse,
-    responses={500: {"model": ErrorResponse}},
+    responses={500: {"model": ErrorResponseEnvelope}},
 )
 def get_video_face_scan_status(
     app_state: State = Depends(get_state),
@@ -377,7 +377,7 @@ class PurgeFrameCacheResponse(BaseModel):
 @router.post(
     "/purge-frame-cache",
     response_model=PurgeFrameCacheResponse,
-    responses={500: {"model": ErrorResponse}},
+    responses={500: {"model": ErrorResponseEnvelope}},
 )
 def purge_frame_cache():
     """Delete the sampled keyframe JPEGs. Tags and semantic search survive:
@@ -416,7 +416,7 @@ class ToggleFavouriteResponse(BaseModel):
 @router.post(
     "/toggle-favourite",
     response_model=ToggleFavouriteResponse,
-    responses={code: {"model": ErrorResponse} for code in [404, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [404, 500]},
 )
 def toggle_favourite(req: ToggleFavouriteRequest):
     """

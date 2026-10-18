@@ -33,6 +33,7 @@ from app.schemas.memories import (
     DeleteMemoryData,
     DeleteMemoryResponse,
     ErrorResponse,
+    ErrorResponseEnvelope,
     GenerateMemoriesData,
     GenerateMemoriesRequest,
     GenerateMemoriesResponse,
@@ -149,7 +150,7 @@ def _to_story(row: Dict[str, Any]) -> MemoryStory:
 @router.post(
     "/generate",
     response_model=GenerateMemoriesResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 500]},
 )
 def generate_memories(
     request: GenerateMemoriesRequest, app_state: State = Depends(get_state)
@@ -244,7 +245,7 @@ def generate_memories(
 @router.get(
     "/status",
     response_model=MemoryStatusResponse,
-    responses={code: {"model": ErrorResponse} for code in [500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [500]},
 )
 def get_memory_status() -> MemoryStatusResponse:
     """
@@ -282,7 +283,7 @@ def get_memory_status() -> MemoryStatusResponse:
 @router.get(
     "/today",
     response_model=GetTodayMemoryResponse,
-    responses={code: {"model": ErrorResponse} for code in [500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [500]},
 )
 def get_today_memory() -> GetTodayMemoryResponse:
     """
@@ -312,7 +313,7 @@ def get_today_memory() -> GetTodayMemoryResponse:
 @router.get(
     "",
     response_model=GetMemoriesResponse,
-    responses={code: {"model": ErrorResponse} for code in [500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [500]},
 )
 def list_memories(
     limit: int = Query(30, ge=1, le=100, description="Maximum memories to return"),
@@ -347,7 +348,7 @@ def list_memories(
 @router.get(
     "/{memory_id}",
     response_model=GetMemoryResponse,
-    responses={code: {"model": ErrorResponse} for code in [404, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [404, 500]},
 )
 def get_memory(memory_id: str) -> GetMemoryResponse:
     """Get a single memory with its full image set."""
@@ -370,7 +371,7 @@ def get_memory(memory_id: str) -> GetMemoryResponse:
 @router.patch(
     "/{memory_id}",
     response_model=UpdateMemoryResponse,
-    responses={code: {"model": ErrorResponse} for code in [400, 404, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [400, 404, 500]},
 )
 def update_memory(memory_id: str, request: UpdateMemoryRequest) -> UpdateMemoryResponse:
     """Update a memory's viewed, dismissed or notified state."""
@@ -418,7 +419,7 @@ def update_memory(memory_id: str, request: UpdateMemoryRequest) -> UpdateMemoryR
 @router.delete(
     "/{memory_id}",
     response_model=DeleteMemoryResponse,
-    responses={code: {"model": ErrorResponse} for code in [404, 500]},
+    responses={code: {"model": ErrorResponseEnvelope} for code in [404, 500]},
 )
 def delete_memory(memory_id: str) -> DeleteMemoryResponse:
     """Delete a memory. Its curated image list cascades; the photos remain."""

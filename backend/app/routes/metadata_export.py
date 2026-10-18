@@ -9,7 +9,7 @@ from starlette.datastructures import State
 from app.database.xmp_export_state import db_get_xmp_export_counts
 from app.logging.setup_logging import get_logger
 from app.routes.dependencies import get_state
-from app.schemas.metadata_export import ErrorResponse
+from app.schemas.metadata_export import ErrorResponse, ErrorResponseEnvelope
 from app.utils.xmp.exporter import xmp_export_run
 
 logger = get_logger(__name__)
@@ -73,7 +73,7 @@ def _status(app_state: State) -> MetadataExportStatusData:
 @router.post(
     "/run",
     response_model=MetadataExportStatusResponse,
-    responses={500: {"model": ErrorResponse}},
+    responses={500: {"model": ErrorResponseEnvelope}},
 )
 def run_metadata_export(
     app_state: State = Depends(get_state),
@@ -109,7 +109,7 @@ def run_metadata_export(
 @router.get(
     "/status",
     response_model=MetadataExportStatusResponse,
-    responses={500: {"model": ErrorResponse}},
+    responses={500: {"model": ErrorResponseEnvelope}},
 )
 def get_metadata_export_status(
     app_state: State = Depends(get_state),

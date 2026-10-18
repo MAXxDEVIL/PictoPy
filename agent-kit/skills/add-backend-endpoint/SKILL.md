@@ -53,7 +53,7 @@ Template: `agent-kit/templates/route.py.md`.
 
 - `router = APIRouter()` and `logger = get_logger(__name__)` after the imports.
 - Response models as Pydantic classes in the route file.
-- `responses={500: {"model": ErrorResponse}}` on every route.
+- `responses={500: {"model": ErrorResponseEnvelope}}` on every route.
 - Return `{success, message, data}`.
 - **Build list responses row by row.** One record with unusable metadata must not 500 the
   whole listing and hide every other row. `get_all_videos` shows the pattern.
